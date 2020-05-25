@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WindowWashingTest.BookService">
+    
+    <ContentPage.Content>
+        <StackLayout Margin="15">
+            
+            <Label Text="Please enter a breif description of what you need done"
+                   FontSize="Large"
+                   VerticalOptions="Start" 
+                   HorizontalOptions="Center"/>
+            <Label Text="ex. window cleaning, gutters, lawn aeration"
+                   FontSize="Small"
+                   TextColor="DimGray"/>
+
+            <Entry x:Name="Description"
+                   />
+            <StackLayout Margin="0,30"
+                         x:Name="Parent">
+                <Label Text="Select property"
+                       Margin="0,0,0,10" 
+                       IsVisible="True"/>
+                <StackLayout Orientation="Horizontal"
+                             x:Name="P1SL">
+                    <CheckBox x:Name="P1"/>
+                    <Label Text="My Address,"
+                           FontSize="Small"
+                           x:Name="P1Label"/>
+                    <Label Text=""
+                           FontSize="Small"
+                           x:Name="P1Addy"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"
+                             x:Name="P2SL"
+                             IsVisible="False">
+                    <CheckBox x:Name="P2"/>
+                    <Label Text=""
+                           FontSize="Small"
+                           x:Name="P2Label"/>
+                    <Label Text=""
+                           FontSize="Small"
+                           x:Name="P2Addy"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"
+                             x:Name="P3SL"
+                             IsVisible="False">
+                    <CheckBox x:Name="P3"/>
+                    <Label Text=""
+                           FontSize="Small"
+                           x:Name="P3Label"/>
+                    <Label Text=""
+                           FontSize="Small"
+                           x:Name="P3Addy"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"
+                             x:Name="P4SL"
+                             IsVisible="False">
+                    <CheckBox x:Name="P4"/>
+                    <Label Text=""
+                           FontSize="Small"
+                           x:Name="P4Label"/>
+                    <Label Text=""
+                           FontSize="Small"
+                           x:Name="P4Addy"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"
+                             x:Name="P5SL"
+                             IsVisible="False">
+                    <CheckBox x:Name="P5"/>
+                    <Label Text=""
+                           FontSize="Small"
+                           x:Name="P5Label"/>
+                    <Label Text=""
+                           FontSize="Small"
+                           x:Name="P5Addy"/>
+                </StackLayout>
+            </StackLayout>
+            
+            <Button Text="Request Quote"
+                    x:Name="reqService"
+                    BackgroundColor="SandyBrown"
+                    BorderColor="Black"
+                    BorderWidth="2"
+                    Clicked="reqService_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

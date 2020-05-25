@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WindowWashingTest.MainPage">
+
+    <StackLayout Margin="15" >
+        
+        <Image x:Name="Logo"
+                Aspect="AspectFit"
+               Margin="15,40"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+        <Label Text="Early Bird Services" 
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               TextColor="Black"/>
+        <Button x:Name="LogInButton"
+                Text="Log In"
+                VerticalOptions="EndAndExpand"
+                BackgroundColor="SandyBrown"
+                BorderColor="Black"
+                BorderWidth="2"
+                Clicked="LogInButton_Clicked"/>
+        <Button Text="Register" 
+                x:Name="RegisterAcct"
+                VerticalOptions="End"
+                BackgroundColor="SandyBrown"
+                BorderColor="Black"
+                BorderWidth="2"
+                Clicked="RegisterAcct_Clicked"/>
+       
+    </StackLayout>
+
+</ContentPage>

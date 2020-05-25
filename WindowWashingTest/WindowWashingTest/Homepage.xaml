@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WindowWashingTest.Homepage">
+    <ContentPage.Content>
+        <StackLayout Margin="15">
+            <Label Text=""
+                   x:Name="NameLabel"
+               FontSize="Large"
+           HorizontalOptions="Center"
+           VerticalOptions="Start" 
+               TextColor="Black"/>
+
+            <Image x:Name="Logo"
+                Aspect="AspectFit"
+               Margin="15,40"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+            <Label Text="Early Bird Services" 
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               TextColor="Black"/>
+            <Label x:Name="p1"></Label>
+            <Label x:Name="p2"></Label>
+            <Label x:Name="p3"></Label>
+            <Label x:Name="p4"></Label>
+            <Label x:Name="p5"></Label>
+                   
+
+            <StackLayout Margin="0,5,0,30">
+            <Button x:Name="BookService"
+                Text="Get a quote"
+                BackgroundColor="SandyBrown"
+                BorderColor="Black"
+                BorderWidth="2"
+                Clicked="BookService_Clicked"/>
+            
+            <Button Text="Register a Property" 
+                x:Name="RegisterProp"
+                BackgroundColor="SandyBrown"
+                BorderColor="Black"
+                BorderWidth="2"
+                Clicked="RegisterProp_Clicked"/>
+            <Button Text="My Profile"
+                x:Name="gotoProfile"
+                BackgroundColor="SandyBrown"
+                BorderColor="Black"
+                BorderWidth="2"
+                    Clicked="gotoProfile_Clicked"
+               />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

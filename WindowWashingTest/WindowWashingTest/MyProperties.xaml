@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WindowWashingTest.MyProperties">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Your Properties"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   />
+            <StackLayout Orientation="Horizontal"
+                         BackgroundColor="SandyBrown" 
+                         Margin="0"
+                         x:Name="p1">
+                <StackLayout Margin="15,0,0,0">
+                    <Label Text="My House"
+                           x:Name="name"
+                           FontSize="Large"
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="CenterAndExpand"/>
+                    <Label Text="Address"
+                           x:Name="address"
+                           FontSize="Small"
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="CenterAndExpand"      
+                       />
+                    <Label Text="PostalCode"
+                           x:Name="postalCode"
+                           FontSize="Small"
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="CenterAndExpand"      
+                       />
+                    <Label Text="Address"
+                           x:Name="resident"
+                           FontSize="Small"
+                           VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="CenterAndExpand"      
+                       />
+                </StackLayout>
+
+                <Button Text="Edit"
+                        HorizontalOptions="EndAndExpand"
+                        Margin="0,0,30,0" Padding="0"/>
+            </StackLayout>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

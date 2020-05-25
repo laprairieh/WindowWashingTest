@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WindowWashingTest.PropertyRegistration">
+    <ContentPage.Content>
+        <StackLayout Margin="15">
+            <Label Text="Please fill out all fields"
+                FontSize="Subtitle"
+                   Margin="0, 30"
+                   />
+
+            <Label x:Name="errorMsg"
+                       TextColor="Red"
+                       Text=""/>
+
+
+
+            <Entry Placeholder="Property Name (Optional)"
+                   x:Name="PropertyName"/>
+
+            <Entry Placeholder="Street Address"
+                   x:Name="Address"/>
+
+
+            <Entry Placeholder="Postal code"
+                   x:Name="postalCode"
+                   />
+                   
+            <StackLayout Orientation="Horizontal">
+                <CheckBox x:Name="ImResident"/>
+                <Label Text="I live here"
+                   FontSize="Small"/>
+            </StackLayout>
+
+            <Entry Placeholder="Primary Resident (if you do not live here)"
+                   x:Name="otherResident"/>
+
+
+
+            <Button Text="Register Property" 
+                    x:Name="RegProp"
+                BackgroundColor="SandyBrown"
+                BorderColor="Black"
+                BorderWidth="2"
+                    Margin="0, 75"
+                Clicked="RegProp_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WindowWashingTest.Registration">
+    <ContentPage.Content>
+        
+        <ScrollView HeightRequest="2000">
+            <StackLayout>
+                <StackLayout Margin="25">
+                    <Label Text="Register account"
+                           FontSize="Large"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Center"
+                           Margin="0,0,0,15"/>
+                    <Label Text="Please fill out all fields"
+                           FontSize="Subtitle"/>
+                    <Label x:Name="errorMsg"
+                           TextColor="Red"
+                           Text=""/>
+                    <Entry Placeholder="First Name"
+                           x:Name="firstName"/>
+                    <Entry Placeholder="Last Name"
+                           x:Name="lastName"/>
+                    <Entry Placeholder="Email Address"
+                           x:Name="email"
+                           Keyboard="Email"/>
+                    <Entry Placeholder="Phone Number"
+                           x:Name="phoneNumber"
+                           Keyboard="Numeric"/>
+                    <Entry Placeholder="Address"
+                           x:Name="addy"/>
+                    <Entry Placeholder="PostalCode"
+                           x:Name="pcode"/>
+                    <Entry Placeholder="Password"
+                           x:Name="password"
+                           IsPassword="True"/>
+                    <Entry Placeholder="Retype Password"
+                           x:Name="retypePassword"
+                           IsPassword="True"/>
+                </StackLayout>
+                <Button Text="Create Account" 
+                        x:Name="createAcct"
+                        BackgroundColor="SandyBrown"
+                        BorderColor="Black"
+                        BorderWidth="2"
+                        Clicked="createAcct_Clicked"
+                        Margin="15,80,15,0"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
